@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+bash gkc_util_hashcode_script.bash add
+git add -u
+yarn lint-staged
+npm test
